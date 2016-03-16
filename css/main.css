@@ -1,16 +1,15 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
-<header>
-  <img src="images/placeholder-16by9.svg" alt="">
-  <h1>Giant space moths invade Earth<h1>
-  <p>Our friendly giant, nuclear radiated lizard steps up to battle against the nefarious space moths</p>
-</header>
+
+body {
+  margin: 0;
+}
 
 .img-flex {
   width: 100%;
@@ -18,12 +17,30 @@ html {
 }
 
 .banner {
-  position: absolute;
-  font-size: 4rem;
-  max-width: 500px;
+  position: relative;
+  max-height: 500px;
+  overflow: hidden;
 }
 
-p {
-  position: absolute;
+.banner-title {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 4rem;
+}
+
+.banner-content {
   font-size: 2rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 1em;
+  transform: translateX(-50%);
+  z-index: 100;
+  max-width: 50em;
+  width: 100%;
 }
