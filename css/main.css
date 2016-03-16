@@ -1,0 +1,29 @@
+html {
+	box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+<header>
+  <img src="images/placeholder-16by9.svg" alt="">
+  <h1>Giant space moths invade Earth<h1>
+  <p>Our friendly giant, nuclear radiated lizard steps up to battle against the nefarious space moths</p>
+</header>
+
+.img-flex {
+  width: 100%;
+  display: block;
+}
+
+.banner {
+  position: absolute;
+  font-size: 4rem;
+  max-width: 500px;
+}
+
+p {
+  position: absolute;
+  font-size: 2rem;
+}
